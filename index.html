@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <nav class="nav">
+      <span class="nav__logo">JD<span class="accent">.</span></span>
+      <ul class="nav__links">
+        <li><a href="#portfolio">Trabajo</a></li>
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="hero__content">
+      <h1 class="hero__title">Portfolio web</h1>
+      <p class="hero__sub">Diseñador y desarrollador front-end</p>
+      <a href="#portfolio" class="btn-cta">Ver trabajo <span class="btn-arrow">↓</span></a>
+    </div>
+  </header>
+
+  <!-- PORTFOLIO CARRUSEL -->
+  <section class="portfolio" id="portfolio">
+    <div class="section-header">
+      <h2 class="section-title">Proyectos</h2>
+      <p class="section-desc">Hacé click en una card para explorar.</p>
+    </div>
+
+    <div class="carousel-wrapper">
+      <div class="carousel" id="carousel">
+
+        <article class="card" data-index="0">
+          <div class="card__bg" style="background-image: url('img/project1.jpg')"></div>
+          <div class="card__overlay"></div>
+          <div class="card__content">
+            <span class="card__tag">UI/UX</span>
+            <h3 class="card__title">Visión Nocturna</h3>
+            <p class="card__desc">Dashboard de analítica en tiempo real con visualizaciones de datos avanzadas.</p>
+            <a href="#" class="card__link">Ver proyecto <span>→</span></a>
+          </div>
+          <div class="card__glow"></div>
+        </article>
+
+        <article class="card" data-index="1">
+          <div class="card__bg" style="background-image: url('img/project2.jpg')"></div>
+          <div class="card__overlay"></div>
+          <div class="card__content">
+            <span class="card__tag">Desarrollo</span>
+            <h3 class="card__title">Eco Sistema</h3>
+            <p class="card__desc">Plataforma e-commerce sustentable con experiencia de usuario innovadora.</p>
+            <a href="#" class="card__link">Ver proyecto <span>→</span></a>
+          </div>
+          <div class="card__glow"></div>
+        </article>
+
+        <article class="card" data-index="2">
+          <div class="card__bg" style="background-image: url('img/project3.jpg')"></div>
+          <div class="card__overlay"></div>
+          <div class="card__content">
+            <span class="card__tag">Branding</span>
+            <h3 class="card__title">Forma & Vacío</h3>
+            <p class="card__desc">Identidad visual completa para estudio de arquitectura contemporáneo.</p>
+            <a href="#" class="card__link">Ver proyecto <span>→</span></a>
+          </div>
+          <div class="card__glow"></div>
+        </article>
+
+        <article class="card" data-index="3">
+          <div class="card__bg" style="background-image: url('img/project4.jpg')"></div>
+          <div class="card__overlay"></div>
+          <div class="card__content">
+            <span class="card__tag">Motion</span>
+            <h3 class="card__title">Flujo Continuo</h3>
+            <p class="card__desc">Animaciones procedurales e instalación interactiva para galería de arte.</p>
+            <a href="#" class="card__link">Ver proyecto <span>→</span></a>
+          </div>
+          <div class="card__glow"></div>
+        </article>
+
+        <article class="card" data-index="4">
+          <div class="card__bg" style="background-image: url('img/project5.jpg')"></div>
+          <div class="card__overlay"></div>
+          <div class="card__content">
+            <span class="card__tag">App</span>
+            <h3 class="card__title">Pulso Urbano</h3>
+            <p class="card__desc">App móvil de movilidad inteligente para ciudades inteligentes.</p>
+            <a href="#" class="card__link">Ver proyecto <span>→</span></a>
+          </div>
+          <div class="card__glow"></div>
+        </article>
+
+        <article class="card" data-index="5">
+          <div class="card__bg" style="background-image: url('img/project6.jpg')"></div>
+          <div class="card__overlay"></div>
+          <div class="card__content">
+            <span class="card__tag">3D</span>
+            <h3 class="card__title">Arquitectura Datos</h3>
+            <p class="card__desc">Visualización 3D interactiva de infraestructura de redes globales.</p>
+            <a href="#" class="card__link">Ver proyecto <span>→</span></a>
+          </div>
+          <div class="card__glow"></div>
+        </article>
+
+      </div>
+
+      <!-- Navegación -->
+      <button class="carousel-btn carousel-btn--prev" id="btnPrev" aria-label="Anterior">‹</button>
+      <button class="carousel-btn carousel-btn--next" id="btnNext" aria-label="Siguiente">›</button>
+    </div>
+
+    <!-- Indicadores -->
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__grid">
+      <div class="about__text">
+        <h2 class="section-title">Sobre mí</h2>
+        <p>Soy diseñador y desarrollador con más de 5 años creando interfaces que combinan estética y funcionalidad. Me apasionan los proyectos donde el detalle marca la diferencia.</p>
+        <p>Trabajo desde la conceptualización hasta la implementación, con foco en experiencias que sorprenden y retienen.</p>
+        <div class="skills-grid">
+          <div class="skill-pill">UI/UX Design</div>
+          <div class="skill-pill">Frontend Dev</div>
+          <div class="skill-pill">Motion Design</div>
+          <div class="skill-pill">Branding</div>
+          <div class="skill-pill">Design Systems</div>
+          <div class="skill-pill">Prototipado</div>
+        </div>
+      </div>
+      <div class="about__visual">
+        <div class="about__card-glass">
+          <div class="about__stat"><span class="stat-num accent">+50</span><span class="stat-label">Proyectos</span></div>
+          <div class="about__stat"><span class="stat-num accent">+5</span><span class="stat-label">Años exp.</span></div>
+          <div class="about__stat"><span class="stat-num accent">+30</span><span class="stat-label">Clientes</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__inner">
+      <h2 class="section-title">Contacto</h2>
+      <p class="contact__sub">Estoy disponible para proyectos y colaboraciones.<br />Escribime.</p>
+      <a href="mailto:hola@portfolio.com" class="btn-cta btn-cta--large">hola@portfolio.com <span class="btn-arrow">→</span></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="nav__logo">JD<span class="accent">.</span></span>
+    <p>© 2025 — Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

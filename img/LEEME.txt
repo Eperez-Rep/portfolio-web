@@ -1,0 +1,15 @@
+Carpeta /img/ — Imágenes del portfolio
+=======================================
+
+Agregá tus imágenes con estos nombres exactos:
+
+  project1.jpg  →  Card "Visión Nocturna"
+  project2.jpg  →  Card "Eco Sistema"
+  project3.jpg  →  Card "Forma & Vacío"
+  project4.jpg  →  Card "Flujo Continuo"
+  project5.jpg  →  Card "Pulso Urbano"
+  project6.jpg  →  Card "Arquitectura Datos"
+
+Tamaño recomendado: 640×840 px (relación 3:4)
+Formato: JPG o PNG
+Sin imágenes: las cards muestran fondo oscuro con patrón decorativo.
