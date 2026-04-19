@@ -65,10 +65,6 @@
     const card = cards[index];
     if (!card) return;
 
-    const carouselRect = carousel.getBoundingClientRect();
-    const cardRect     = card.getBoundingClientRect();
-
-    // Centrar la card en el viewport del carousel
     const offset =
       card.offsetLeft -
       carousel.offsetWidth / 2 +
@@ -76,7 +72,6 @@
 
     carousel.scrollTo({ left: offset, behavior: 'smooth' });
 
-    // También centrar la sección en el viewport (scrollIntoView suave)
     const section = document.getElementById('portfolio');
     if (section) {
       const sectionTop = section.getBoundingClientRect().top + window.scrollY;
@@ -86,18 +81,33 @@
   }
 
   /* =============================================
-     CLICK en cards
+     CLICK en cards → activar o abrir enlace
      ============================================= */
   cards.forEach((card, i) => {
-    card.addEventListener('click', () => activateCard(i, true));
+    card.addEventListener('click', (e) => {
+      if (card.classList.contains('active')) {
+        const link = card.querySelector('.card__link');
+        const href = link && link.getAttribute('href');
+        if (href && href !== '#' && !e.target.closest('.card__link')) {
+          window.open(href, '_blank', 'noopener');
+        }
+      } else {
+        activateCard(i, true);
+      }
+    });
 
-    // Teclado — accesibilidad
     card.setAttribute('tabindex', '0');
     card.setAttribute('role', 'button');
     card.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        activateCard(i, true);
+        if (card.classList.contains('active')) {
+          const link = card.querySelector('.card__link');
+          const href = link && link.getAttribute('href');
+          if (href && href !== '#') window.open(href, '_blank', 'noopener');
+        } else {
+          activateCard(i, true);
+        }
       }
     });
   });
@@ -175,14 +185,12 @@
     carousel.scrollLeft = touchScrollLeft + diff;
   }, { passive: true });
 
-  /* Detectar swipe finalizado → snap a card más cercana */
   carousel.addEventListener('touchend', snapToNearest);
   carousel.addEventListener('mouseup',  snapToNearest);
   carousel.addEventListener('scroll',   onScroll, { passive: true });
 
   /* =============================================
-     SNAP automático: detectar qué card está más
-     centrada y activarla sin forzar scroll
+     SNAP automático
      ============================================= */
   let scrollTimer = null;
 
@@ -206,7 +214,7 @@
     });
 
     if (closest !== activeIndex) {
-      activateCard(closest, false); // sin re-scroll para no loop
+      activateCard(closest, false);
     }
   }
 
@@ -215,10 +223,8 @@
      ============================================= */
   function init () {
     buildDots();
-    // Primera card activa de entrada
     activateCard(0, false);
 
-    // Centrar el scroll al inicio
     requestAnimationFrame(() => {
       const first = cards[0];
       if (first) {
@@ -228,7 +234,6 @@
     });
   }
 
-  // Esperar a que el DOM esté listo
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {

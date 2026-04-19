@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Portfolio — JD</title>
   <link rel="stylesheet" href="css/estilos.css" />
 </head>
 <body>
 
-  <!-- HERO -->
+  <!-- NAV -->
   <header class="hero">
     <nav class="nav">
       <span class="nav__logo">JD<span class="accent">.</span></span>
@@ -18,8 +18,11 @@
         <li><a href="#contact">Contacto</a></li>
       </ul>
     </nav>
+
+    <!-- HERO -->
     <div class="hero__content">
-      <h1 class="hero__title">Portfolio web</h1>
+      <span class="hero__eyebrow">Diseño · Desarrollo · 2025</span>
+      <h1 class="hero__title">Portfolio<br /><em>web.</em></h1>
       <p class="hero__sub">Diseñador y desarrollador front-end</p>
       <a href="#portfolio" class="btn-cta">Ver trabajo <span class="btn-arrow">↓</span></a>
     </div>
@@ -29,92 +32,156 @@
   <section class="portfolio" id="portfolio">
     <div class="section-header">
       <h2 class="section-title">Proyectos</h2>
-      <p class="section-desc">Hacé click en una card para explorar.</p>
+      <p class="section-desc">Hacé click para explorar.</p>
     </div>
 
     <div class="carousel-wrapper">
       <div class="carousel" id="carousel">
 
-        <article class="card" data-index="0">
-          <div class="card__bg" style="background-image: url('img/project1.jpg')"></div>
+        <article class="card" data-index="0" data-href="#">
+          <div class="card__bg"></div>
+          <div class="card__preview">
+            <div class="card__preview-screen">
+              <div class="card__preview-bar"><i></i><i></i><i></i></div>
+              <div class="card__preview-body">
+                <div class="card__preview-img" style="background-image: url('img/project1.jpg')"></div>
+                <div class="card__preview-lines">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="card__overlay"></div>
           <div class="card__content">
             <span class="card__tag">UI/UX</span>
             <h3 class="card__title">Visión Nocturna</h3>
             <p class="card__desc">Dashboard de analítica en tiempo real con visualizaciones de datos avanzadas.</p>
-            <a href="#" class="card__link">Ver proyecto <span>→</span></a>
+            <a href="#" class="card__link" target="_blank" rel="noopener">Ver proyecto <span>→</span></a>
           </div>
-          <div class="card__glow"></div>
         </article>
 
-        <article class="card" data-index="1">
-          <div class="card__bg" style="background-image: url('img/project2.jpg')"></div>
+        <article class="card" data-index="1" data-href="#">
+          <div class="card__bg"></div>
+          <div class="card__preview">
+            <div class="card__preview-screen">
+              <div class="card__preview-bar"><i></i><i></i><i></i></div>
+              <div class="card__preview-body">
+                <div class="card__preview-img" style="background-image: url('img/project2.jpg')"></div>
+                <div class="card__preview-lines">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="card__overlay"></div>
           <div class="card__content">
             <span class="card__tag">Desarrollo</span>
             <h3 class="card__title">Eco Sistema</h3>
             <p class="card__desc">Plataforma e-commerce sustentable con experiencia de usuario innovadora.</p>
-            <a href="#" class="card__link">Ver proyecto <span>→</span></a>
+            <a href="#" class="card__link" target="_blank" rel="noopener">Ver proyecto <span>→</span></a>
           </div>
-          <div class="card__glow"></div>
         </article>
 
-        <article class="card" data-index="2">
-          <div class="card__bg" style="background-image: url('img/project3.jpg')"></div>
+        <article class="card" data-index="2" data-href="#">
+          <div class="card__bg"></div>
+          <div class="card__preview">
+            <div class="card__preview-screen">
+              <div class="card__preview-bar"><i></i><i></i><i></i></div>
+              <div class="card__preview-body">
+                <div class="card__preview-img" style="background-image: url('img/project3.jpg')"></div>
+                <div class="card__preview-lines">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="card__overlay"></div>
           <div class="card__content">
             <span class="card__tag">Branding</span>
             <h3 class="card__title">Forma & Vacío</h3>
             <p class="card__desc">Identidad visual completa para estudio de arquitectura contemporáneo.</p>
-            <a href="#" class="card__link">Ver proyecto <span>→</span></a>
+            <a href="#" class="card__link" target="_blank" rel="noopener">Ver proyecto <span>→</span></a>
           </div>
-          <div class="card__glow"></div>
         </article>
 
-        <article class="card" data-index="3">
-          <div class="card__bg" style="background-image: url('img/project4.jpg')"></div>
+        <article class="card" data-index="3" data-href="#">
+          <div class="card__bg"></div>
+          <div class="card__preview">
+            <div class="card__preview-screen">
+              <div class="card__preview-bar"><i></i><i></i><i></i></div>
+              <div class="card__preview-body">
+                <div class="card__preview-img" style="background-image: url('img/project4.jpg')"></div>
+                <div class="card__preview-lines">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="card__overlay"></div>
           <div class="card__content">
             <span class="card__tag">Motion</span>
             <h3 class="card__title">Flujo Continuo</h3>
             <p class="card__desc">Animaciones procedurales e instalación interactiva para galería de arte.</p>
-            <a href="#" class="card__link">Ver proyecto <span>→</span></a>
+            <a href="#" class="card__link" target="_blank" rel="noopener">Ver proyecto <span>→</span></a>
           </div>
-          <div class="card__glow"></div>
         </article>
 
-        <article class="card" data-index="4">
-          <div class="card__bg" style="background-image: url('img/project5.jpg')"></div>
+        <article class="card" data-index="4" data-href="#">
+          <div class="card__bg"></div>
+          <div class="card__preview">
+            <div class="card__preview-screen">
+              <div class="card__preview-bar"><i></i><i></i><i></i></div>
+              <div class="card__preview-body">
+                <div class="card__preview-img" style="background-image: url('img/project5.jpg')"></div>
+                <div class="card__preview-lines">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="card__overlay"></div>
           <div class="card__content">
             <span class="card__tag">App</span>
             <h3 class="card__title">Pulso Urbano</h3>
             <p class="card__desc">App móvil de movilidad inteligente para ciudades inteligentes.</p>
-            <a href="#" class="card__link">Ver proyecto <span>→</span></a>
+            <a href="#" class="card__link" target="_blank" rel="noopener">Ver proyecto <span>→</span></a>
           </div>
-          <div class="card__glow"></div>
         </article>
 
-        <article class="card" data-index="5">
-          <div class="card__bg" style="background-image: url('img/project6.jpg')"></div>
+        <article class="card" data-index="5" data-href="#">
+          <div class="card__bg"></div>
+          <div class="card__preview">
+            <div class="card__preview-screen">
+              <div class="card__preview-bar"><i></i><i></i><i></i></div>
+              <div class="card__preview-body">
+                <div class="card__preview-img" style="background-image: url('img/project6.jpg')"></div>
+                <div class="card__preview-lines">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="card__overlay"></div>
           <div class="card__content">
             <span class="card__tag">3D</span>
             <h3 class="card__title">Arquitectura Datos</h3>
             <p class="card__desc">Visualización 3D interactiva de infraestructura de redes globales.</p>
-            <a href="#" class="card__link">Ver proyecto <span>→</span></a>
+            <a href="#" class="card__link" target="_blank" rel="noopener">Ver proyecto <span>→</span></a>
           </div>
-          <div class="card__glow"></div>
         </article>
 
       </div>
 
-      <!-- Navegación -->
       <button class="carousel-btn carousel-btn--prev" id="btnPrev" aria-label="Anterior">‹</button>
       <button class="carousel-btn carousel-btn--next" id="btnNext" aria-label="Siguiente">›</button>
     </div>
 
-    <!-- Indicadores -->
     <div class="carousel-dots" id="carouselDots"></div>
   </section>
 
